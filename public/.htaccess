@@ -1,0 +1,14 @@
+<IfModule rewrite_module>
+	#开启重写引擎
+	RewriteEngine on
+	#重写的条件(访问的url地址指向的不是文件、不是目录的时候，采用重写机制)
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	
+	#重写规则
+	RewriteRule (.*) index.php/$1
+</IfModule>
+
+<IfModule dir_module>
+    DirectoryIndex index.html index.php
+</IfModule>

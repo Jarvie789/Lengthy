@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Lengthy</title>
+    <script type="text/javascript" src="{{STATIC_RESULT}}/common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_RESULT}}/common/layer/layer.js"></script>
+    <style type="text/css">
+        *{ padding: 0; margin: 0; }
+        a{
+            color:#2E5CD5;
+            cursor: pointer;
+            text-decoration: none
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        body{
+            background: #fff;
+            font-family: "Microsoft yahei";
+            color: #333;
+            font-size:18px
+        }
+        h1{
+            font-size: 100px;
+            font-weight: normal;
+            margin-bottom: 12px;
+        }
+        p{
+            line-height: 1.6em;
+            font-size: 42px
+        }
+    </style>
+</head>
+<body>
+    <div style="padding: 24px 48px;">
+        <h1> Lengthy </h1><br/>
+        <p style="font-size:22px;">
+            <span>[ V1.0 版本 ] <a onclick="testUrl()">URL美化测试</a></span><br/>
+            <span>{{$notice}}</span>
+        </p>
+    </div>
+    <script type="text/javascript">
+        var oA = document.getElementsByName('a')[0];
+        function testUrl() {
+            layer.msg('测试成功，正在跳转');
+            window.setTimeout(function () {
+                location.href='{{U url='home/index/index' get=['page'=>'1']}}';
+            },3000);
+        }
+    </script>
+</body>
+</html>

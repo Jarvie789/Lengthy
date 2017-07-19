@@ -7,6 +7,6 @@
 ```
 
 # 关于我
-* nickName:秋田嘉
+* nickName(秋田嘉)
 * 邮件(`qiutianjia#yeah.net`, 把#换成@)
 * [Site-Blog](http://qiutianjia.cnblogs.com)

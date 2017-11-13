@@ -8,7 +8,6 @@
  */
 namespace home\controller;
 use framework\core\Controller;
-use framework\core\Factory;
 
 class IndexController extends Controller
 {

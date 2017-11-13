@@ -18,7 +18,6 @@ return [
     'char'                  => 'utf8',           //字符集编码
     'table_prefix'          => 'ask_',           //表前缀
 
-
     #Smarty模板配置
     'smarty' => [
         'setLeftDelimiter'  => '{{',             //左定界标识符
